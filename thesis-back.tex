@@ -1,0 +1,35 @@
+% !TEX root = thesis-main.tex
+
+% Include list of notation
+%\chapter*{List of Notation}
+%\addcontentsline{toc}{chapter}{List of Notation}
+%\markboth{List of Notation}{List of Notation}
+
+
+% Include the bibliography
+
+% Do some formatting of the chapter title and page headers
+% Set the item separation to 0 (saves a few pages)
+\renewcommand{\bibsection}{\chapter{Bibliography}}
+\renewcommand{\bibname}{Bibliography}
+\markboth{Bibliography}{Bibliography}
+\renewcommand{\bibfont}{\footnotesize}
+\setlength{\bibsep}{0pt}
+
+% Include the actual bib file
+% Add the chapter to the ToC (it doesn't happen automatically if you loose the chapter number)
+\bibliographystyle{abbrvnat}
+\bibliography{thesis}
+
+
+
+% Include abstract(s)
+
+% Add at least a Dutch one, the English one could also go on the back cover
+% Again, add the chapter to the ToC
+\chapter{Summary}
+
+This is the summary \ldots
+\chapter{Samenvatting}
+
+Dit is de samenvatting \ldots

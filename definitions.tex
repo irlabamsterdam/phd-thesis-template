@@ -1,0 +1,53 @@
+% !TEX root = thesis-main.tex
+% Collect your definitions here
+
+
+% Avoid all caps headers in the table of contents
+\makeatletter
+\renewcommand\tableofcontents{%
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \chapter*{\contentsname
+        \@mkboth{%
+           \contentsname}{\contentsname}}%
+    \@starttoc{toc}%
+    \if@restonecol\twocolumn\fi
+    }
+\makeatother    
+
+
+% Back references ("Cited on page x")
+\renewcommand*{\backref}[1]{} 
+\renewcommand*{\backrefalt}[4]{%
+\ifcase #1
+\or (Cited on page~#2.)  %
+\else 
+(Cited on pages~#2.)  
+\fi
+}
+
+% Add number-less footnotes to the start of your chapters to indicate origins
+\let\svthefootnote\thefootnote
+\newcommand\blankfootnote[1]{%
+  \let\thefootnote\relax\footnotetext{#1}%
+  \let\thefootnote\svthefootnote%
+}
+\let\svfootnote\footnote
+\renewcommand\footnote[2][?]{%
+  \if\relax#1\relax%
+    \blankfootnote{#2}%
+  \else%
+    \if?#1\svfootnote{#2}\else\svfootnote[#1]{#2}\fi%
+  \fi
+}
+
+% Some command for the writing phase
+\newcommand{\todo}[1]{\textcolor{red}{#1}}  %todo's in red
+\newcommand{\new}[1]{\textcolor{blue}{#1}} %new content in blue
+
+% Define some commonly used acronyms. 
+\acrodef{IR}{information retrieval}
+

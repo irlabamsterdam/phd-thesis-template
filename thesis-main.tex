@@ -1,0 +1,53 @@
+\documentclass[b5paper,10pt]{book}
+
+\input{packages}
+\input{definitions}
+
+% Start the document
+\begin{document}
+
+% Start the front matter
+% Latex takes care of Roman page numbering ( I, II, III, IV, etc) for front matter
+% Front matter, acknowledgements, and ToC
+\frontmatter
+\input{thesis-front}
+\input{acknowledgements}
+\tableofcontents
+
+
+% Start the main matter
+% Here, Latex will use Arabic page numbering (1, 2, 3, etc.)
+% Add all your chapters:
+%  1. introduction
+%  2. background/ related work
+%  3. experimental methodology
+%  4,5,X. technical chapters
+%  X+1. conclusion
+\mainmatter
+\input{01-introduction/main}
+\input{02-background/main}
+\input{03-methodology/main}
+
+\part{A First Part}
+\input{04-research-01/main}
+
+\part{Another Part}
+\input{04-research-02/main}
+
+\bookmarksetup{startatroot} % Lift from parts
+\addtocontents{toc}{\bigskip} % skip
+
+\input{05-conclusions/main}
+
+
+% Start the back matter
+% Numbering stays the same
+% Add 1) bibliography, 2) abstract (Dutch/English)
+\backmatter
+\input{thesis-back}
+
+%% Close
+\end{document}
+
+%% And we're done. Congratulations! 
+%% Now submit, defend and get your degree!
