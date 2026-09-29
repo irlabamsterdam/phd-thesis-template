@@ -1,5 +1,7 @@
 IRLab PhD thesis style sheet. Builds on the ILPS PhD thesis stylesheet by Wouter Weerkamp and Edgar Meij (2011).
 
+Download the complete template immediately as a ZIP file: [irlab-phd-thesis-template.zip](https://github.com/irlabamsterdam/phd-thesis-template/raw/refs/heads/main/irlab-phd-thesis-template.zip).
+
 Additions and modifications by 
 
 - Anne Schuth (2015) 
@@ -15,4 +17,3 @@ Additions and modifications by
 - Maarten de Rijke (2023)
 - Maarten de Rijke (2023)
 - Maarten de Rijke (2024)
-
