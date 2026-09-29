@@ -1,0 +1,23 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Hawking(1988)]{hawking-1988-brief}
+S.~Hawking.
+\newblock \emph{A Brief History of Time: From the Big Bang to Black Holes}.
+\newblock Bantam, 1988.
+
+\bibitem[Meij(2010)]{meij2010thesis}
+E.~Meij.
+\newblock \emph{Combining Concepts and Language Models for Information Access}.
+\newblock PhD thesis, University of Amsterdam, 2010.
+
+\bibitem[Weerkamp(2011)]{weerkamp2011thesis}
+W.~Weerkamp.
+\newblock \emph{Finding People and their Utterances in Social Media}.
+\newblock PhD thesis, University of Amsterdam, 2011.
+
+\end{thebibliography}
