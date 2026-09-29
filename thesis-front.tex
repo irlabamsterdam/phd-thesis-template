@@ -19,8 +19,30 @@
 \end{titlepage}
 
 
-% Skip a page to start on a right page again.
-\mbox{}\newpage
+% On the back of the title page include the following:
+%   sponsors/ project numbers
+%   ISBN
+%   copyrights, cover design, printer
+
+% make sure the material is pushed to the bottom of the page
+\mbox{}
+\vfill
+
+% Sponsors and projects
+\noindent
+The research was carried out at the Information Retrieval Lab at the University of Amsterdam, with support from SomeOne under project number XXX-YYY.  \\
+\bigskip
+
+% Copyrights
+\noindent
+Copyright \copyright~202X Your Name, Amsterdam, The Netherlands\\
+Cover by Someone Else\\
+Printed by Printer Name, City\\
+\\
+ISBN: xxx-xx-xxxx-xxx-x\\
+
+\clearpage
+
 \setcounter{page}{1}
 
 
@@ -40,10 +62,12 @@
 {\large ter verkrijging van de graad van doctor aan de \\
 Universiteit van Amsterdam\\
 op gezag van de Rector Magnificus\\
-prof.\ dr.\ ir.\ P.P.C.C.\ Verbeek\\
+% rector's name no longer required as per mid 2026
+% prof.\ dr.\ ir.\ P.P.C.C.\ Verbeek\\
 ten overstaan van een door het College voor Promoties ingestelde \\
 commissie, in het openbaar te verdedigen in \\
-\textcolor{cyan}{de Agnietenkapel} \textcolor{orange}{or} \textcolor{magenta}{de Aula der Universiteit}\\
+\textcolor{cyan}{de Agnietenkapel} \textcolor{orange}{or} \textcolor{magenta}{de Aula der Universiteit}
+\textcolor{orange}{or} \textcolor{purple}{SPUI25}\\
 op XXXdag XX maand 202X, te XX:00 uur \\ } %IT SHOULD REALLY BE 'te'
 \par\vspace {1cm} {\large door}
 \par \vspace {1cm}
@@ -56,18 +80,15 @@ op XXXdag XX maand 202X, te XX:00 uur \\ } %IT SHOULD REALLY BE 'te'
 \end{center}
 
 
-% The page following the titelblad. This usiallu contains:
+% The page following the titelblad. 
+% This usually contains:
 %   committee members
-%   SIKS logo + text
-%   sponsors/ project numbers
-%   ISBN
-%   copyrights, cover design, printer
 \clearpage
 \noindent%
 \textbf{Promotiecommissie} \\\\
 \begin{tabular}{@{}l l l}
 Promotor: 
-& Prof.\ dr.\ N.N. & Universiteit van Amsterdam %promotor
+& prof.\ dr.\ N.N. & Universiteit van Amsterdam %promotor
 \\
 Co-promotor: 
 & \todo{?} & \todo{?} 
@@ -84,19 +105,19 @@ Overige leden:
 Faculteit der Natuurwetenschappen, Wiskunde en Informatica\\
 
 \vfill
-
-% Sponsors and projects
-\noindent
-The research was carried out at the Information Retrieval Lab at the University of Amsterdam, with support from SomeOne under project number XXX-YYY.  \\
-\bigskip
-
-% Copyrights
-\noindent
-Copyright \copyright~202X Your Name, Amsterdam, The Netherlands\\
-Cover by Someone Else\\
-Printed by Printer Name, City\\
-\\
-ISBN: xxx-xx-xxxx-xxx-x\\
+%
+%% Sponsors and projects
+%\noindent
+%The research was carried out at the Information Retrieval Lab at the University of Amsterdam, with support from SomeOne under project number XXX-YYY.  \\
+%\bigskip
+%
+%% Copyrights
+%\noindent
+%Copyright \copyright~202X Your Name, Amsterdam, The Netherlands\\
+%Cover by Someone Else\\
+%Printed by Printer Name, City\\
+%\\
+%ISBN: xxx-xx-xxxx-xxx-x\\
 
 \clearpage
 }
